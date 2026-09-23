@@ -1,4 +1,6 @@
-package Part1;
+package Part2;
+
+import Part1.Point;
 
 public class Circle {
 
@@ -21,5 +23,13 @@ public class Circle {
         return radius;
     }
 
+    // Returns the circumference of this circle
+    public double perimeter() {
+        return 2 * Math.PI * radius;
+    }
 
+    // Returns the area of this circle
+    public double area() {
+        return Math.PI * radius * radius;
+    }
 }

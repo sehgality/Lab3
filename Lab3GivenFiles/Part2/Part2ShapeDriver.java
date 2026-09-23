@@ -1,13 +1,12 @@
 package Part2;
 
 import Part1.Point;
-import Part1.Circle;
-import Part1.Rectangle;
 
 import java.util.ArrayList;
 
 public class Part2ShapeDriver {
 
+    // Builds circles and rectangles, computes their perimeters/areas, and prints the smallest and largest values
     public static void main(String[] args) {
         Circle[] circles = new Circle[3];
         circles[0] = new Circle(new Point(0, 0), 2.0);
@@ -36,6 +35,7 @@ public class Part2ShapeDriver {
         System.out.println("Largest computed value: " + result[1]);
     }
 
+    // Returns the smallest and largest values in the given list as a two-element array
     public static double[] smallLarge(ArrayList<Double> computedList) {
         double smallest = computedList.get(0);
         double largest = computedList.get(0);
